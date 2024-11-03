@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AdvancedReboot</string>
+
+    <string name="title1">What method to use?</string>
+    <string name="shizuku" translatable="false">shizuku</string>
+    <string name="root" translatable="false">root</string>
+
+    <string name="title2">Restart to where?</string>
+    <string name="shutdown">shutdown</string>
+    <string name="normal">just reboot</string>
+    <string name="recovery" translatable="false">recovery</string>
+    <string name="bootloader">bootloader</string>
+    <string name="download">download</string>
+    <string name="edl">edl</string>
+
+    <string name="back">back</string>
+</resources>

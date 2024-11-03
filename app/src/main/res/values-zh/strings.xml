@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">高级重启</string>
+
+    <string name="title1">使用什么方式?</string>
+
+    <string name="title2">重启到哪里?</string>
+    <string name="shutdown">关机</string>
+    <string name="normal">仅重启</string>
+    <string name="bootloader">fastboot</string>
+    <string name="download">odin</string>
+    <string name="edl">9008</string>
+
+    <string name="back">上一级</string>
+</resources>
