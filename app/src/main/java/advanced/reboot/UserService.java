@@ -1,7 +1,5 @@
 package advanced.reboot;
 
-import java.io.IOException;
-
 public class UserService extends IUserService.Stub {
 
     @Override
@@ -18,8 +16,7 @@ public class UserService extends IUserService.Stub {
     public void execLine(String command) {
         try {
             Runtime.getRuntime().exec(command);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (Throwable ignored) {
         }
     }
 }

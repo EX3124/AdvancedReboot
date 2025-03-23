@@ -10,111 +10,117 @@
         android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/title1"
         android:textAlignment="center"
         android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/interface1"
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/shizuku"
+        <LinearLayout
+            android:id="@+id/interface1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shizuku" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="16dp" />
+            <Button
+                android:id="@+id/shizuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shizuku" />
 
-        <Button
-            android:id="@+id/root"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/root" />
-    </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
 
-    <LinearLayout
-        android:id="@+id/interface2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+            <Button
+                android:id="@+id/root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/root" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/shutdown"
+        <LinearLayout
+            android:id="@+id/interface2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shutdown" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="4dp" />
+            <Button
+                android:id="@+id/shutdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shutdown" />
 
-        <Button
-            android:id="@+id/reboot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/normal" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="4dp" />
+            <Button
+                android:id="@+id/reboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/normal" />
 
-        <Button
-            android:id="@+id/recovery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/recovery" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="4dp" />
+            <Button
+                android:id="@+id/recovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recovery" />
 
-        <Button
-            android:id="@+id/bootloader"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/bootloader" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="4dp" />
+            <Button
+                android:id="@+id/bootloader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bootloader" />
 
-        <Button
-            android:id="@+id/download"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/download"
-            android:visibility="gone" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp" />
 
-        <Space
-            android:id="@+id/space1"
-            android:layout_width="wrap_content"
-            android:layout_height="4dp"
-            android:visibility="gone" />
+            <Button
+                android:id="@+id/download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download"
+                android:visibility="gone" />
 
-        <Button
-            android:id="@+id/edl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/edl" />
+            <Space
+                android:id="@+id/space1"
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/edl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edl" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <Button
